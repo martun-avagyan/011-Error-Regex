@@ -1,12 +1,14 @@
 "use strict";
 
 const tryCatchSyntax = function (str) {
-  const newStr = "";
+  let newStr;
+
   try {
-    newStr = str.split("").reverse.join("");
+    newStr = str.split("").reverse().join("");
   } catch (error) {
     console.log("s.split is not a function");
   }
+  return newStr;
 };
-
-tryCatchSyntax(false);
+tryCatchSyntax(true);
+console.log(tryCatchSyntax("asasas"));
