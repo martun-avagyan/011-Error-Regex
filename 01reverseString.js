@@ -16,5 +16,5 @@ const reverseFunction = function (str) {
 };
 const myNum = 1413621;
 const myStr = "puppy";
-reverseFunction(myNum); // Empty log since the catch block did not work
+reverseFunction(myNum);
 console.log(reverseFunction(myStr));
