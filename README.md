@@ -60,3 +60,14 @@ console.log(s);
 - Exactly 4 or 6 characters.
 - Only numerical characters (0-9).
 - No whitespace.
+
+### [06. Reg Ex Validation](https://github.com/martun-avagyan/011-Error-Regex/blob/main/06regExCode.js)
+
+- Write an expression to validate
+
+```
+const REGEXP = /abc/;
+let str = '<> <a href="/"> <input type="radio" checked> <b>';
+str.match(REGEXP);
+'<a href="/">', '<input type="radio" checked>', "<b>";
+```
