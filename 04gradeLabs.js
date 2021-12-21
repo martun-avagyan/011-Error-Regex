@@ -1,4 +1,16 @@
 "use strict";
+function gradeLabs(labs) {
+  for (let i = 0; i < labs.length; i++) {
+    let lab = labs[i];
+    let result;
+    try {
+      result = lab.runLab(3);
+    } catch (error) {
+      console.log("error");
+    }
+    console.log(`${lab.student} code worked: ${result === 27}`);
+  }
+}
 
 let studentLabs2 = [
   {
@@ -21,4 +33,4 @@ let studentLabs2 = [
   },
 ];
 
-const gradeLab = function (obj) {};
+gradeLabs(studentLabs2);
